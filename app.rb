@@ -102,7 +102,7 @@ post '/process_input.json' do
     G.event("VerifyVote", "LookupByInput", session[:input].to_s) if defined?(G)
 
     if session[:data] # is not null
-      t.say say_str("Labor Camp History: box #{matched_ballot["A1"]}")
+      t.say say_str("Labor Camp History: {matched_ballot["A1"]}")
     else
       # Add a 'say' to the JSON response and hangip the call
       t.say say_str("Sorry, but we did not find a labor campy by that name. Please try again")

@@ -18,7 +18,7 @@ before do
 end
 
 get '/' do
-  redirect "http://github.com/marks/verify-vote"
+  redirect "http://github.com/thesupremebean/verify-vote"
 end
 
 get '/ballot/:serial_number' do
